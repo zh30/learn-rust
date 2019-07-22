@@ -1,9 +1,15 @@
 // 引用标准库std的io
 use std::io;
+// 引入rand
+use rand::Rng;
 // main() 程序的入口点
 fn main() {
 	// 打印一行文字
 	println!("Guess the number:!");
+	// rand::thread_rng 特定随机数生成器。
+	let secret_number = rand::thread_rng().gen_range(1, 101);
+	// 打印生成的随机数。
+	println!("The secret number is: {}", secret_number);
 	// 打印一行文字
 	println!("Please input your guess.");
 	// 声明一个变量（使用 let ）。mut 代表是可变的，不加则相反。= 号右边为 String 类型的空字符串。
