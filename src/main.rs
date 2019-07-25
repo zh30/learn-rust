@@ -10,6 +10,7 @@ fn main() {
 	println!("猜数字！");
 	// rand::thread_rng 特定随机数生成器。
 	let secret_number = rand::thread_rng().gen_range(1, 101);
+	// loop 创建了无限循环，break结束当前loop。
 	loop {
 		// 打印一行文字
 		println!("请输入你的猜测数字：");
