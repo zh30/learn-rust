@@ -25,7 +25,7 @@ fn main() {
 		};
 		// 打印用户输入的文本。
 		println!("你猜的是: {}", guess);
-
+		// match由分支构成
 		match guess.cmp(&secret_number) {
 			Ordering::Less => println!("太小了！"),
 			Ordering::Greater => println!("太大了！"),
