@@ -9,7 +9,9 @@ impl fmt::Display for List {
         write!(f, "[")?;
 
         for (count, v) in vec.iter().enumerate() {
-            if count != 0 { write!(f, ", ")?; }
+            if count != 0 {
+                write!(f, ", ")?;
+            }
             write!(f, "{}", v)?;
         }
 
@@ -18,6 +20,6 @@ impl fmt::Display for List {
 }
 
 fn main() {
-    let v = List(vec![1,2,3]);
+    let v = List(vec![1, 2, 3]);
     println!("{}", v);
 }

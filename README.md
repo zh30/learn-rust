@@ -1,12 +1,19 @@
-# rust
-Rust programming
+# Rust programming
+Learning project
 
-## 安装 rustfmt
+## Install rustfmt
 ```bash
 rustup component add rustfmt
 ```
 
-## 格式化代码
+## Format code
 ```bash
+cd hello-world
 cargo fmt
+```
+
+## Run
+```bash
+cd debug
+cargo run
 ```
