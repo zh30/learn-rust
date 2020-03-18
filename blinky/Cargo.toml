@@ -10,3 +10,5 @@ edition = "2018"
 cortex-m = "0.6.2"
 cortex-m-rt = "0.6.12"
 panic-halt = "0.2.0"
+stm32f103xx-hal = { git = "https://github.com/japaric/stm32f103xx-hal.git" }
+nb = "0.1.2"
