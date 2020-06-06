@@ -13,6 +13,8 @@ struct Number {
 }
 
 fn main() {
+    const MAX: u32 = 10000;
+    println!("MAX is {}", MAX);
     let x: i32 = 42;
     let y: i32 = 32;
     let x = y + x;
