@@ -13,6 +13,7 @@ struct Number {
 }
 
 fn main() {
+    // 定义常量
     const MAX: u32 = 10000;
     println!("MAX is {}", MAX);
     let x: i32 = 42;
