@@ -3,10 +3,10 @@ fn main() {
     println!("is_true is {}", is_true);
 
     // char 在 Rust 语言里面，是 32 位的
-    let a = 'a';
+    let a: char = 'a';
     println!("a is {}", a);
 
-    let b = '你';
+    let b: char = '你';
     println!("b is {}", b);
 
     // i8, i16, i32, i64, u8, u16, u32, u64, f32, f64
