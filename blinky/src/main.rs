@@ -33,7 +33,7 @@ fn main() -> ! {
     let mut gpiob = dp.GPIOB.split(&mut rcc.apb2);
     let mut led = gpiob.pb12.into_push_pull_output(&mut gpiob.crh);
 
-    let mut timer = Timer::syst(cp.SYST, 10.hz(), clocks);
+    let mut timer = Timer::syst(cp.SYST, 20.hz(), clocks);
     loop {
         block!(timer.wait()).unwrap();
         // 点亮 LED

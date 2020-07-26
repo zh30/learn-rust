@@ -5,7 +5,8 @@ fn main() {
     hi1(a, b);
     let c: i32 = hi2(a, b);
     println!("c is {}", c);
-    hi3(a, b);
+    let r = hi3(a, b);
+    println!{"R = {}", r};
     println!("Hello, world!");
 }
 
