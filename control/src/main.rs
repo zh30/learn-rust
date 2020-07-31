@@ -58,6 +58,9 @@ fn main() {
     for elem in &arr {
         println!("Elem is {}", elem);
     }
+    for elem in arr.iter().rev() {
+        println!("Rev ele is {}", elem);
+    }
     'outer: for x in 15..50 {
         for y in 0..16 {
             println!("x is {}, y is {}", x, y);
