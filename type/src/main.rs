@@ -33,6 +33,10 @@ fn main() {
 
     let (x, y, z) = tup;
     println!("x y z is {:1} {:2} {:3}", x, y, z);
+
+    let zh: f32 = 0.1;
+    let he: f32 = 0.2;
+    println!("zh + he = {}", zh + he);
 }
 
 fn show(arr: [u32; 5]) {
