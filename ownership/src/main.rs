@@ -22,4 +22,9 @@ fn main() {
     println!("{}", *orig);
     let stolen = orig;
     println!("{}", *stolen);
+    let mut s = String::from("Hello");
+    let ss = s.clone();
+    s.push_str("string: &str");
+    println!("s is {}", s);
+    println!("ss is {}", ss);
 }
