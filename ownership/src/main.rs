@@ -27,4 +27,8 @@ fn main() {
     s.push_str("string: &str");
     println!("s is {}", s);
     println!("ss is {}", ss);
+    let x = 5;
+    let y = x;
+    println!("{}", x);
+    println!("{}", y);
 }
