@@ -7,7 +7,7 @@ use rand::Rng;
 // main() 程序的入口点
 fn main() {
     // 打印一行文字
-    println!("猜数字！");
+    println!("猜1~100之间的数字！");
     // rand::thread_rng 特定随机数生成器。
     let secret_number = rand::thread_rng().gen_range(1, 101);
     // loop 创建了无限循环。break结束整个loop，continue结束当前loop。
