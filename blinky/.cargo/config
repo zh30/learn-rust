@@ -2,6 +2,7 @@
 target = "thumbv7m-none-eabi"
 
 [target.thumbv7m-none-eabi]
+runner = 'gdb-multiarch'
 rustflags = [
   "-C", "linker=arm-none-eabi-gcc",
   "-C", "link-arg=-Wl,-Tlink.x",
