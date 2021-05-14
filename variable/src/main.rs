@@ -16,10 +16,15 @@ fn main() {
     // 定义常量
     const MAX: u32 = 10000;
     println!("MAX is {}", MAX);
+    // 声明变量
     let x: i32 = 42;
     let y: i32 = 32;
     let x = y + x;
     println!("{:?}", x);
+    // 变量的可变性
+    let mut he: &str = "Hello he!";
+    he = "Hi, he!!!";
+    println!("he is: {}", he);
     let pair = ("zhanghe", 16);
     println!("{parione}, {paritwe}", parione = pair.0, paritwe = pair.1);
     let zh: (char, i32) = ('l', 16);
