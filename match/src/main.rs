@@ -25,7 +25,7 @@ fn main() {
         };
         // 打印用户输入的文本。
         println!("你猜的是: {}", guess);
-        // match由分支构成
+        // match由分支构成，匹配是穷尽式的，即必须穷举所有的可能性，否则会导致程序错误。
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("太小了！"),
             Ordering::Greater => println!("太大了！"),
@@ -34,7 +34,10 @@ fn main() {
                 // 打印生成的随机数。
                 println!("要猜的数： {}", secret_number);
                 break;
-            }
+            },
+            // _ => { // 有一个处理方法是将通配符“_”放置在其他分支之后，通配符“_”会匹配上面没有指定的所有可能的模式。
+            //     println!("通配符");
+            // }
         }
     }
 }

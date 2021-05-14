@@ -33,17 +33,29 @@ fn main() {
         println!("Y is {}", y);
     }
 
+    // if let 处理只匹配一个模式的值而忽略其他模式的情况。
+    let zle = Some(8);
+    if let Some(8) = zle {
+        println!("IF LET is run!");
+    }
+
+    // while let
+    let mut vec = vec![1, 2, 3, 4, 5, 6];
+    while let Some(value) = vec.pop() {
+        println!("while let is {}", value);
+    }
+
     // let 中使用 if
     let condition: bool = true;
     let x = if condition { 5 } else { 6 };
     println!("X = {}", x);
 
-    // loop
+    // loop，重复执行，永远不会结束的循环。
     let mut counter: u32 = 0;
     loop {
-        println!("In Loop");
+        println!("In Loop {}", counter);
         if counter > 10 {
-            break;
+            break; // 循环控制语句，用于退出循环并将返回值返回。
         }
 
         counter += 1;
@@ -52,32 +64,35 @@ fn main() {
     let result = loop {
         counter += 1;
         if counter > 10 {
-            break counter * 2;
+            break counter * 2; // 退出循环并返回值。
         }
     };
     println!("Result is {}", result);
 
     // while
     let mut i: u32 = 0;
-    while i != 10 {
+    while i <= 10 {
         i += 1;
+        println!("While is {}", i);
     }
-    println!("I is {}", i);
 
-    // for
+    // for ... in ...的语法，是一种重复执行指定次数的循环。因其安全性和简洁性常用于对范围类型或集合类型的所有元素执行指定的操作。
     let arr: [u32; 5] = [1, 2, 3, 4, 5];
     // for elem in arr.iter() {
     for elem in &arr {
         println!("Elem is {}", elem);
     }
     for elem in arr.iter().rev() {
-        println!("Rev ele is {}", elem);
+        println!("RevEle is {}", elem);
     }
     'outer: for x in 15..50 {
-        for y in 0..16 {
+        for y in 0..17 {
             println!("x is {}, y is {}", x, y);
+            if x == 15 || y == 15 {
+                continue;
+            };
             if x == y {
-                break 'outer;
+                break 'outer; // break语句直接退出循环，不再执行循环体内的任何代码。而continue语句仅是跳出当前轮循环，不再执行循环体内continue语句之后的代码，但它会再次进行条件判断，决定是否重复执行循环。
             }
         }
     }
