@@ -6,4 +6,4 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-nrf52840-hal = "0.14.1"
+nrf52840-hal = "0.16.0"

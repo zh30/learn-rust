@@ -1,0 +1,15 @@
+[package]
+name = "esp32-c3"
+version = "0.1.0"
+authors = ["Henry Zhang <hello@zhanghe.dev>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[profile.release]
+debug = true
+
+[dependencies]
+esp32c3-hal = "0.15.0"
+esp-backtrace = { version = "0.11.0", features = ["esp32c3", "panic-handler", "exception-handler", "println"] }
+esp-println = { version = "0.9.0", features = ["esp32c3"] }
+
