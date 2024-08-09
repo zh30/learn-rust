@@ -1,0 +1,14 @@
+[package]
+name = "react18"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = [
+  "packages/react",
+  "packages/react-dom",
+  "packages/react-reconciler",
+  "packages/shared",
+]
