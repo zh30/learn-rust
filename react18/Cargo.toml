@@ -9,6 +9,8 @@ edition = "2021"
 members = [
   "packages/react",
   "packages/react-dom",
+  "packages/react-noop",
   "packages/react-reconciler",
+  "packages/scheduler",
   "packages/shared",
 ]

@@ -1,5 +1,5 @@
 [package]
-name = "react-dom"
+name = "scheduler"
 version = "0.1.0"
 authors = ["Henry Zhang <hello@zhanghe.dev>"]
 edition = "2021"
@@ -18,14 +18,6 @@ wasm-bindgen = "0.2.84"
 # all the `std::fmt` and `std::panicking` infrastructure, so isn't great for
 # code size when deploying.
 console_error_panic_hook = { version = "0.1.7", optional = true }
-web-sys = { version = "0.3.66", features = [
-  "console",
-  "Window",
-  "Document",
-  "Text",
-  "Element",
-] }
-react-reconciler = { path = "../react-reconciler" }
 shared = { path = "../shared" }
 
 [dev-dependencies]
